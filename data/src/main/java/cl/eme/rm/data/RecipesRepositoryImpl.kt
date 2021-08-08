@@ -1,8 +1,8 @@
 package cl.eme.rm.data
 
-import cl.eme.rm.businesslogic.domain.BResult
-import cl.eme.rm.businesslogic.domain.RecipesRepository
-import cl.eme.rm.businesslogic.domain.SimpleResult
+import cl.eme.rm.core.domain.BResult
+import cl.eme.rm.core.domain.RecipesRepository
+import cl.eme.rm.core.domain.SimpleResult
 import cl.eme.rm.core.domain.dto.Ingredient
 import cl.eme.rm.core.domain.dto.Recipe
 

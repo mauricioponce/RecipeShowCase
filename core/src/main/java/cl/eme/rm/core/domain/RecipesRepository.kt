@@ -1,6 +1,6 @@
-package cl.eme.rm.businesslogic.domain
+package cl.eme.rm.core.domain
 
-import cl.eme.rm.businesslogic.domain.dto.Ingredient
+import cl.eme.rm.core.domain.dto.Ingredient
 import cl.eme.rm.core.domain.dto.Recipe
 
 interface RecipesRepository {

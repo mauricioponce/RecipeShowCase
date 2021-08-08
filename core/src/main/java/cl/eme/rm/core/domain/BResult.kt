@@ -1,4 +1,4 @@
-package cl.eme.rm.businesslogic.domain
+package cl.eme.rm.core.domain
 
 /**
  * It's part of the business logic as a wrapper for handling failing request

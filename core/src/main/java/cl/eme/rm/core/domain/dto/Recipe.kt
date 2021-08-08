@@ -1,3 +1,10 @@
 package cl.eme.rm.core.domain.dto
 
-data class Recipe(val id: Int, val name: String, val ingredients: List<Ingredient>, val protein: String, val prepTime: Int, val imgUrl: String = "")
+data class Recipe(
+    val id: Int,
+    val name: String,
+    val ingredients: List<Ingredient>,
+    val protein: String,
+    val prepTime: Int,
+    val imgUrl: String = ""
+)
