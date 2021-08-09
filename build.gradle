@@ -2,6 +2,9 @@
 buildscript {
     ext {
         compose_version = '1.0.1'
+        koin_version = '3.0.2'
+        junit_version = '4.13.2'
+        truth_version = '1.4.0'
     }
     repositories {
         google()
