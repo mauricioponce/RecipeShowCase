@@ -1,8 +1,7 @@
 package cl.eme.rm.applayout
 
 import android.app.Application
-import cl.eme.rm.applayout.di.appModule
-import cl.eme.rm.di.listingAppModule
+import cl.eme.rm.applayout.di.listingAppModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 

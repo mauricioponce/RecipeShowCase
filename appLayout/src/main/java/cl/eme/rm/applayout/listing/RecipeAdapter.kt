@@ -8,7 +8,6 @@ import cl.eme.rm.core.domain.dto.Recipe
 
 class RecipeAdapter : RecyclerView.Adapter<RecipeViewHolder>() {
 
-    //TODO esta Recipe debe ser de la vista
     private var recipes = listOf<Recipe>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecipeViewHolder {
