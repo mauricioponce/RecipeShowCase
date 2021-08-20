@@ -5,6 +5,7 @@ buildscript {
         koin_version = '3.0.2'
         junit_version = '4.13.2'
         truth_version = '1.4.0'
+        timber_version = '4.7.1'
     }
     repositories {
         google()
