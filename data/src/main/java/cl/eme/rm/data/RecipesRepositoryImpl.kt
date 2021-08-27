@@ -86,8 +86,9 @@ class RecipesRepositoryImpl : RecipesRepository {
 
     override fun getRecipes(): SimpleResult<List<Recipe>> = BResult.Success(recipes)
 
-    override fun createRecipe(recipe: Recipe) {
+    override fun createRecipe(recipe: Recipe): SimpleResult<Recipe> {
         recipes.add(recipe)
+        return BResult.Success(recipe)
     }
 
     override fun getIngredients(): SimpleResult<List<Ingredient>> = BResult.Success(ingredients)
