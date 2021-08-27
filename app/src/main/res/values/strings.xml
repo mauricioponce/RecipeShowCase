@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">RecipeManager</string>
+    <string name="app_name">RecipesManager</string>
+
+    <string name="recipe_image_content_description">plate</string>
+    <string name="add_recipe_name">New recipe name</string>
+    <string name="preparation_time">Preparation time (in minutes)</string>
 </resources>

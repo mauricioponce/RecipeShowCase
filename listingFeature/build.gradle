@@ -1,5 +1,5 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'kotlin-android'
 }
 
@@ -7,13 +7,13 @@ android {
     compileSdk 30
 
     defaultConfig {
-        applicationId "cl.eme.rm.applayout"
         minSdk 21
         targetSdk 30
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -29,41 +29,31 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-
-    buildFeatures {
-        viewBinding true
-    }
 }
 
 dependencies {
-    implementation project(path: ':listingFeature')
+
+    implementation project(path: ':core')
 
     implementation 'androidx.core:core-ktx:1.6.0'
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'com.google.android.material:material:1.4.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
 
-
-    // viewModels(), FragmentContainerView
-    implementation 'androidx.fragment:fragment-ktx:1.4.0-alpha07'
-    implementation project(path: ':core')
-    implementation project(path: ':core')
-    implementation project(path: ':data')
-    implementation project(path: ':data')
-
-    // Navigation
-    def nav_version = "2.3.5"
-    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
-    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
-
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.1'
 
     // Koin main features for Android (Scope,ViewModel ...)
     implementation("io.insert-koin:koin-android:$koin_version")
     // Koin Android - experimental builder extensions
     implementation("io.insert-koin:koin-android-ext:$koin_version")
 
+
     testImplementation "junit:junit:$junit_version"
+    testImplementation("androidx.test.ext:truth:$truth_version")
+    testImplementation("org.mockito:mockito-core:3.10.0")
+
+    // Koin Test for Kotlin Multiplatform
+    testImplementation( "io.insert-koin:koin-test:$koin_version")
+
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 }
