@@ -15,7 +15,6 @@
             <option value="$PROJECT_DIR$/appLayout" />
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/data" />
-            <option value="$PROJECT_DIR$/fileUploader" />
             <option value="$PROJECT_DIR$/listingFeature" />
             <option value="$PROJECT_DIR$/newRecipeFeature" />
           </set>
